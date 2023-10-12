@@ -5,7 +5,11 @@ from brand import my_brand
 my_brand("HW 04a - Develop with the Perspective of the Tester in mind")
 #Function for getting gitHub username as input
 def gitHubUsernameInput():
-    username_input = input("Enter the username for gitHub: ")
+    try:
+        username_input = input("Enter the username for gitHub: ")
+    except EOFError:
+        username_input = "pyadav6"
+    
     return username_input
 
 #Function for getting response from gitHub repos fetching API     
