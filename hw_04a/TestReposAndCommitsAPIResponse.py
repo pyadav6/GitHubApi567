@@ -5,7 +5,7 @@ from gitHubReposAndCommits import gitHubUsernameInput, responseFromGitHubAPIForR
 
 my_brand_here = False
 my_brand("HW 04a - Develop with the Perspective of the Tester in mind")
-#gitHubUsername = gitHubUsernameInput()
+gitHubUsername = gitHubUsernameInput()
 
 class TestgitHubReposAndCommits(unittest.TestCase):
     #def setUp(self):
